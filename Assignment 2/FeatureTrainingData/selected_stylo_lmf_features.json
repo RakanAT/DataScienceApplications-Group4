@@ -1,0 +1,17 @@
+[
+  "semicolon_ratio",
+  "quote_density",
+  "morph_len_var",
+  "type_token_ratio",
+  "noun_ratio",
+  "avg_sent_len",
+  "hapax_ratio",
+  "function_ratio",
+  "avg_morph_len",
+  "comma_ratio",
+  "adv_ratio",
+  "verb_ratio",
+  "punct_density",
+  "lexical_density",
+  "sent_len_std"
+]

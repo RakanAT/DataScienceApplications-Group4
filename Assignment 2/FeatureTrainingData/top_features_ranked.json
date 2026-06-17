@@ -1,0 +1,10 @@
+[
+  "SBERT",
+  "TF-IDF-PCA50",
+  "Stylometric",
+  "Stylo+LMF",
+  "SBERT-PCA50",
+  "LMF",
+  "TF-IDF",
+  "BOW"
+]
