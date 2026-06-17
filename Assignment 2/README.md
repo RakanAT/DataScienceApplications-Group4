@@ -13,14 +13,8 @@ Clusters text passages from books into 5 genres — **biography**, **fantasy**, 
 | 1 | `Book partitioner.ipynb` | Samples 200 × 400-word partitions from each of the 25 KnownBooks, saves `TestingData/partitions.csv` |
 | 2 | `Feature Vector.ipynb` | Strips Gutenberg boilerplate, filters non-English tokens, extracts genre vocabulary, builds all feature representations, runs vocabulary analysis, generates `selected_stylo_lmf_features.json` |
 | 3 | `Clustering.ipynb` | Loads all feature sets, applies all 6 algorithms, evaluates with silhouette / kappa / coherence, confusion matrices, cluster plots, error analysis |
+| 4 | `ClusterAllBooks.ipynb` | Loads pre-computed AllBooks features from `Feature Vector.ipynb`, applies language filtering, runs the same 6 algorithms |
 
-### Full Corpus (~98 books)
-
-| Notebook | What it does |
-|----------|-------------|
-| `ClusterAllBooks.ipynb` | Loads pre-computed AllBooks features from `Feature Vector.ipynb`, applies language filtering, runs the same 6 algorithms |
-
-> Run the **AllBooks section** of `Feature Vector.ipynb` before `ClusterAllBooks.ipynb` to generate the `allbooks_*.csv/npy` files.
 
 ---
 
@@ -153,7 +147,7 @@ Core:
 pip install scikit-learn pandas numpy matplotlib seaborn nltk sentence-transformers
 ```
 
-Optional (required for specific algorithms or features):
+Required for specific algorithms or features:
 ```bash
 pip install minisom          # SOM clustering
 pip install gensim           # LDA topic coherence (C_V score)
